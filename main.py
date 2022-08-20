@@ -71,32 +71,39 @@ while True:
 
             elif command == "j":
                 chrome_search(
-                    "https://www.youtube.com/watch?v=Lp9Ftuq2sVI&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME&index=121"
-                    "&ab_channel=CodeWithHarry")
+                   "https://www.youtube.com/watch?v=Lp9Ftuq2sVI&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME&index=121"
+                    "&ab_channel=CodeWithHarry") #to open a specific youtube video
 
             elif command == "k":
                 os.startfile("C:\\Users\\Admin\\PycharmProjects\\auto_type_whatsapp_pyauto_key\\key.py")
+                # To execute a program carry your all passwords
 
             elif command == "p":
                 os.startfile("C:\\Users\\Admin\\PycharmProjects")
+                # To open Pycharm
 
             elif command == "q":
                 PROCNAME = "python.exe"
                 for proc in psutil.process_iter():  # psutil to kill task
                     if proc.name() == PROCNAME:
                         proc.kill()
+                        #To kill the task
 
             elif command == "r":
                 chrome_search("replit.com")
+                #It open replit.com
 
             elif command == "y":
                 chrome_search("youtube.com")
+                # To open YouTube
 
             elif command == "h":
                 print(commands_help())
+                # For help
 
             elif command == "cam":
                 os.system("start microsoft.windows.camera:")
+                #To open the camera
 
             elif command == "ccam":
 
@@ -104,21 +111,25 @@ while True:
                 for proc in psutil.process_iter():  # psutil to kill task
                     if proc.name() == PROCNAME:
                         proc.kill()
+                        # To close the camera application
 
             elif command == "cs":
                 PROCNAME = "chrome.exe"
                 for proc in psutil.process_iter():  # psutil to kill task
                     if proc.name() == PROCNAME:
                         proc.kill()
+                        # To close chrome
 
             elif command == 'py':
                 os.startfile("C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains\\PyCharm Community Edition 2022.2.lnk")
+                #To access py charm
 
             elif command == "tum":
                 chrome_search("https://www.youtube.com/watch?v=W8We0tKTmQ0&ab_channel=TextaudioLyrics")
-
+                 #To open your favourite song
             elif command == "ref":
                 chrome_search("https://replit.com/@HackerUttam/Refreshbot#main.py")
+                #To open a specific site
 
             elif command == "user":
                 chrome_search("https://replit.com/@HackerUttam/Printusernamejson#data.py")
@@ -132,16 +143,22 @@ while True:
 
             elif '/s' in command:
                 command = str(command.replace("/s ", ""))
-                chrome_search('https://google.com/search?q=' + command)  # used for search
+                chrome_search('https://google.com/search?q=' + command)  
+                ''' /s <Search item> 
+                this comamnd opens the default browser and serch item on google.com'''
+                
 
             elif '/y ' in command:
                 command = command.replace("/y ", "")
                 pwt.playonyt(command)
+                ''' /y <search item> this command do a search on youtube.com and by default click 
+                on the first video pops up and play it'''
 
             elif '/yt' in command:
                 command = command.replace("/yt ", "")
                 # command = command.replace
                 chrome_search("https://www.youtube.com/results?search_query=" + command)
+                ''' this command search the items on youtube.com and shows the results'''
 
             else:
                 print("Wrong command")
