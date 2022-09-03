@@ -84,8 +84,7 @@ def init_commands(command):
         os.startfile("D:\\Uttam")
 
     elif command == "y":                                                # To open YouTube
-        chrome_search("youtube.com")
-        
+        chrome_search("youtube.com")     
   
     elif command == "cs":                                               # To close chrome
         PROCNAME = "chrome.exe"
@@ -102,11 +101,9 @@ def init_commands(command):
             if proc.name() == PROCNAME:
                 proc.kill()
 
-
     elif command == 'py':                                               # To open pycharm
         os.startfile(
             "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains\\PyCharm Community Edition 2022.2.lnk")
-
 
     elif command == "dr":                                               # To open Google Drive
         chrome_search("https://drive.google.com/drive/u/0/my-drive")
@@ -120,7 +117,6 @@ def init_commands(command):
 
     else:
         pass
-
 
 app = customtkinter.CTk()
 app.title("Alpha Assistant")
